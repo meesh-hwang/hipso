@@ -1,0 +1,273 @@
+body{
+  background-color: #6c757d;
+  height: max-content;
+  font-family: 'readex pro', sans-serif;
+}
+
+/* Features Section */
+
+#features {
+  display: none;
+}
+
+#features\ bg-secondary > h1 {
+  margin-top: -30px;
+}
+
+
+#instructors {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+
+
+
+/* ACCORDION/footer */
+.accordion-body ul li {
+  list-style-type: none;
+}
+
+.accordion-body ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.accordion-body ul li a:hover{
+  text-decoration: underline;
+}
+
+.accordion-button {
+  background-color: #7b3a92!important;
+}
+
+.trademark {
+  background-color: #ffce48;
+}
+
+/* nav */
+
+.navbar {
+  background-color: #7b3a92;
+}
+
+body > header > nav > div > a > img {
+  height: 20px;
+}
+
+.navbar-toggler{
+  font-size: 1rem;
+  border: none;
+  transition: top .3s ease;
+}
+
+nav .container a img {
+  max-height: min-content;
+}
+
+/*Video/hero banner*/
+.video{
+  margin: auto;
+}
+
+video {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+div.flex-column h1.fw-bold {
+  font-size: 1em;
+}
+
+body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > p:nth-child(2){
+  display: none;
+}
+
+body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > p.fw-light{
+  font-size: 2.8vw;
+}
+
+body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > button{
+  background-color: #172868;
+}
+
+body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > button:hover {
+  background-color: #33406e;
+}
+
+body > div.card.text-center{
+  margin: auto;
+  background-color: #172868;
+}
+
+/* carousel */
+
+div.carousel-item {
+  height: 400px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 390px) {
+  
+  body > div.card.text-center.bg-white{
+  margin-top: 5vh;
+}
+}
+
+@media (min-width: 510px) {
+  
+  body > div.card.text-center.bg-secondary{
+  margin-top: 10vh;
+}
+
+body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > p:nth-child(2){
+  display: inline;
+}
+
+body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > h1 {
+  font-size: 2.2vh!important;
+}
+
+#liveToastBtn {
+  font-size: 2.3vh;
+}
+
+body > header > nav > div > a > img {
+  height: 30px;
+}
+}
+
+
+  
+@media (min-width: 768px) {
+
+  body > div.card.text-center.bg-secondary {
+    display: none;
+  }
+
+  body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > p:nth-child(2){
+    font-size: 2.4vh;
+    width: 80%;
+  }
+
+  
+  body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > h1 {
+    font-size: 3.3vh!important;
+    margin-top: 50px;
+  }
+
+  body > h3 {
+    margin-top: 10vh;
+  }
+
+  #features {
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 882px) {
+
+  body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > h1 {
+    margin-top: 60px;
+  }
+
+  
+  #liveToastBtn {
+    margin-top: 60px!important;
+  }
+
+  body > h3 {
+    margin-top: 10vh;
+  }
+
+  #features {
+    display: block;
+  }
+
+  #instructors > div > div:nth-child(1) {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  
+  #instructors > div > div:nth-child(2) {
+    margin-bottom: 100px;
+  }
+
+  body > div.card.text-center.bg-white > div {
+    display: none;
+  }
+  
+
+}
+
+@media (min-width: 1000px) {
+
+  body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > h1 {
+    margin-top: 100px;
+    font-size: 3.8vh!important;
+  }
+
+  body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > p:nth-child(2){
+    font-size: 3vh!important;
+    margin-top: 30px;    
+  }
+  
+  #liveToastBtn {
+    margin-top: 70px!important;
+    font-size: 3.2vh;
+  }
+
+  #features h3.textcenter {
+    margin-top: 10;
+  }
+  #features {
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > h1 {
+    margin-top: 80px;
+    font-size: 3.7vh!important;
+  }
+
+  body > div.d-flex.flex-column.text-center.align-items-center.w-100.text-white.px-4.py-5 > p:nth-child(2){
+    font-size: 2vh!important;
+    margin-top: 30px;    
+  }
+  
+  #liveToastBtn {
+    margin-top: 70px!important;
+    font-size: 3.3vh;
+  }
+
+  body > h3 {
+    margin-top: 20vh;
+  }
+}
+
+@media(min-width: 1300px) {
+  body > h3 {
+    margin-top: 30vh;
+  }
+
+
+}
+
+@media(min-width: 1400px) {
+  body > h3 {
+    margin-top: 45vh;
+  }
+
+  #features{
+    margin-top: 30vh;
+  }
+}
+
+

@@ -1,0 +1,328 @@
+<!-- Meesh Hwang A01234334 -->
+
+<!-- started from iPhone 5/SE dimensions: 320 x 568
+content is from term 1 communications project -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400&family=Neuton:wght@300&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Hipso</title>
+</head>
+<body>
+    
+    <header>
+          <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark py-1">
+      <div class="container">
+          <a href="#" class="navbar-left"><img class="navbar-left" src="img/logo.svg" alt="Hipso Logo"></a>
+
+          <!-- Hamburger Menu Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="#features" class="nav-link">Features</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#instructors" class="nav-link">Instructors</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#catalogue" class="nav-link">Catalogue</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+       
+    </header>
+     <!-- Video -->
+     <div class="video">
+     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+       <source src="img/banner-video.mp4" type="video/mp4">
+       <source src="img/hipso-hero-image.jpg" type="image/jpg">
+     </video>
+     </div>
+     <!-- Overlay Text -->
+       <div class="d-flex flex-column text-center align-items-center w-100 text-white px-4 py-5">
+           <h1 class="fw-bold fs-6">Don't let time or location be an excuse to miss out on your training.</h1>
+             <p>Train at your own speed from beginner level to advanced in the comfort of your own home alongside world-renowned dancers.</p>
+             <!-- Toast is triggered on this button click-->
+             <button type="button" id="liveToastBtn" class="btn mt-3 text-white" data-bs-toggle="modal" data-bs-target="#ctaModal">
+              Free-Trial
+            </button>
+             <p class="fw-light">Try out a 7-day trial on us!</p>
+       </div>
+
+       <!-- modal-->
+       <div class="modal fade" id="ctaModal" tabindex="-1" aria-labelledby="ctaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ctaModalLabel">Register</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Email:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="col-form-label">Password:</label>
+                  <input type="text" class="form-control" id="password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">SIGN UP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card -->
+       <div class="card text-center bg-white" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">We know how difficult learning online can be. That's why we optimized the video player to cater to your own personalized learning.</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Features
+          </button>
+        </div>
+      </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <h1 class="mb-3 mb-md-0 fs-3">Features</h3>
+      
+              <div class="carousel-inner">
+                <div class="carousel-item active bg-secondary pt-5">
+                  
+                  <img src="img/carousel/sections.png" class="p-4 d-block w-50 mx-auto" alt="loop video player feature">
+                  <h3 class="fs-6 px-4 py-2 text-center text-white">EASY STEP-BY-STEP LEARNING</h3>
+                </div>
+                <div class="carousel-item bg-secondary pt-5">
+                  
+                  <img src="img/carousel/loop.png" class="p-4 d-block w-50 mx-auto" alt="sections video player feature">
+                  <h3 class="fs-6 px-4 py-2 text-white text-center">REPEAT ANY PART</h3>
+                </div>
+                <div class="carousel-item bg-secondary pt-5">
+                  
+                  <img src="img/carousel/speed.png" class="p-4 d-block w-75 mx-auto" alt="speed video player feature">
+                  <h3 class="fs-6 px-4 py-2 text-center text-white">DIFFERENT SPEEDS</h3>
+                </div>
+                <div class="carousel-item bg-secondary pt-5">
+                  
+                  <img src="img/carousel/views.png" class="p-4 d-block w-50 mx-auto" alt="views video player feature">
+                  <h3 class="fs-6 px-4 py-2 text-center text-white">WATCH FROM DIFFERENT ANGLES</h3>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="features">
+<h3 class="mb-3 p-4 mb-md-0 fs-3 text-center text-white">Features</h3>
+<h1 class="text-center text-white">&#8595;</h1>
+
+<!-- Grid -->
+<div class="container">
+  
+  <div class="row">
+    <div class="col d-flex flex-column justify-content-center">
+      <img src="img/carousel/sections.png" class="d-block w-50 p-4 mx-auto" alt="loop video player feature">
+      <h3 class="fs-6 text-white text-center justify-self-end">EASY STEP-BY-STEP LEARNING</h3>
+    </div>
+    <div class="col d-flex flex-column justify-content-center">
+      <img src="img/carousel/loop.png" class="d-block w-50 p-4 mx-auto" alt="sections video player feature">
+      <h3 class="fs-6 text-white text-center justify-self-end">REPEAT ANY PART</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex flex-column justify-content-center">
+      <img src="img/carousel/speed.png" class="d-block w-75 p-4 mx-auto" alt="speed video player feature">
+      <h3 class="fs-6 text-center text-white">DIFFERENT SPEEDS</h3>
+    </div>
+    <div class="col d-flex flex-column justify-content-center"><img src="img/carousel/views.png" class="mx-auto d-block w-50 p-4" alt="views video player feature">
+      <h3 class="fs-6 p-2 text-center text-white">WATCH FROM DIFFERENT ANGLES</h3></div>
+  </div>
+</div>
+</section>
+<!-- Toast -->
+
+<section id="toast">
+<div class="position-fixed bottom-0 start-0 p-3 w-75" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-header">
+      <strong class="me-auto">Holiday Special</strong>
+    </div>
+    <div class="toast-body">
+      Get 50% off a 6 month subscription!
+    </div>
+    <div class="mt-2 px-2 py-2 border-top">
+      <button type="button" class="btn btn-primary btn-sm">Claim</button>
+      <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- grid -->
+<section id="instructors" class="bg-white">
+  <h3 class="text-center">Instructors</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img src="img/instructor/bailey-prev.jpg" class="card-img-top" alt="bailey seok">
+          <div class="card-body">
+            <h5 class="card-title">Bailey Seok</h5>
+          </div>
+        </div>  
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/instructor/galenhooks-prev.jpg" class="card-img-top" alt="Galen Hooks">
+          <div class="card-body">
+            <h5 class="card-title">Galen Hooks</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/instructor/josh-prev.jpg" class="card-img-top" alt="Josh Beauchamp">
+          <div class="card-body">
+            <h5 class="card-title">Josh Beauchamp</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img src="img/instructor/kayceerice-prev.jpg" alt="kaycee rice" class="card-img-top">
+          <div class="card-body">
+            
+            <h5 class="card-title">Kaycee Rice</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/instructor/seanlew-prev.jpg" alt="sean lew" class="card-img-top">
+          <div class="card-body">
+
+            <h5 class="card-title">Sean Lew</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/instructor/sorahyang-prev.jpg" alt="sorah yang" class="card-img-top">
+          <div class="card-body">
+
+            <h5 class="card-title">Sorah Yang</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Footer -->
+    <footer>
+      <!-- Accordion -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Support
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             Terms of Use
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Memberships</a></li>
+                <li><a href="#">Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trademark">
+        <p class="text-center">&copy;2021 Hipso Co.</p>
+      </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+    var toastTrigger = document.getElementById('liveToastBtn')
+      var toastLiveExample = document.getElementById('liveToast')
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', function () {
+          var toast = new bootstrap.Toast(toastLiveExample)
+      
+          toast.show()
+        })
+      }
+      </script>
+    <script src="js/main.js">
+    </script>
+</body>
+</html>
